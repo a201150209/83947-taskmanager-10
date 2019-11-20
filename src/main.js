@@ -337,3 +337,4 @@ renderTemplate(cardsWrapperElement, createEditCardTemplate());
 for (let i = 0; i < MAX_CARDS_QUANTITY; i++) {
   renderTemplate(cardsWrapperElement, createCardTemplate());
 }
+//test ssh
