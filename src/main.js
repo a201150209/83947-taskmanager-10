@@ -332,9 +332,7 @@ renderTemplate(mainElement, createBoardTemplate());
 const boardElement = mainElement.querySelector(selectorElement.board);
 renderTemplate(boardElement, createMoreButtonTemplate());
 
-const cardsWrapperElement = boardElement.querySelector(
-  selectorElement.cardWrapper
-);
+const cardsWrapperElement = boardElement.querySelector(selectorElement.cardWrapper);
 renderTemplate(cardsWrapperElement, createEditCardTemplate());
 for (let i = 0; i < MAX_CARDS_QUANTITY; i++) {
   renderTemplate(cardsWrapperElement, createCardTemplate());
