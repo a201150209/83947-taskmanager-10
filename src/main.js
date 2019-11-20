@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const MAX_CARDS_QUANTITY = 3;
 
@@ -323,9 +323,7 @@ const renderTemplate = (element, template, place = `beforeend`) => {
 };
 
 const mainElement = document.querySelector(selectorElement.main);
-const menuWrapperElement = mainElement.querySelector(
-  selectorElement.menuWrapper
-);
+const menuWrapperElement = mainElement.querySelector(selectorElement.menuWrapper);
 
 renderTemplate(menuWrapperElement, createMenuTemplate());
 renderTemplate(mainElement, createFiltersTemplate());
@@ -338,6 +336,6 @@ const cardsWrapperElement = boardElement.querySelector(
   selectorElement.cardWrapper
 );
 renderTemplate(cardsWrapperElement, createEditCardTemplate());
-for (var i = 0; i < MAX_CARDS_QUANTITY; i++) {
+for (let i = 0; i < MAX_CARDS_QUANTITY; i++) {
   renderTemplate(cardsWrapperElement, createCardTemplate());
 }
