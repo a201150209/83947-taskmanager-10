@@ -1,9 +1,9 @@
-import { createMenuTemplate } from './components/menu.js';
-import { createFiltersTemplate } from './components/filters.js';
-import { createBoardTemplate } from './components/board.js';
-import { createLoadMoreButtonTemplate } from './components/load-more-button.js';
-import { createCardTemplate } from './components/card.js';
-import { createCardEditTemplate } from './components/card-edit.js';
+import {createMenuTemplate} from './components/menu.js';
+import {createFiltersTemplate} from './components/filters.js';
+import {createBoardTemplate} from './components/board.js';
+import {createLoadMoreButtonTemplate} from './components/load-more-button.js';
+import {createCardTemplate} from './components/card.js';
+import {createCardEditTemplate} from './components/card-edit.js';
 
 const MAX_CARDS_QUANTITY = 3;
 
