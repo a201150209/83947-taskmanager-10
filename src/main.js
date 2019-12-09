@@ -2,8 +2,9 @@ import {createMenuTemplate} from './components/menu.js';
 import {createFiltersTemplate} from './components/filters.js';
 import {createBoardTemplate} from './components/board.js';
 import {createLoadMoreButtonTemplate} from './components/load-more-button.js';
-import {createCardTemplate} from './components/card.js';
-import {createCardEditTemplate} from './components/card-edit.js';
+import {createTaskTemplate} from './components/task.js';
+import {createTaskEditTemplate} from './components/task-edit.js';
+import {tasks} from './components/task-list.js';
 
 const MAX_CARDS_QUANTITY = 3;
 
@@ -29,8 +30,8 @@ const boardElement = mainElement.querySelector(SelectorElement.BOARD);
 renderTemplate(boardElement, createLoadMoreButtonTemplate());
 
 const cardsWrapperElement = boardElement.querySelector(SelectorElement.CARD_WRAPPER);
-renderTemplate(cardsWrapperElement, createCardEditTemplate());
+renderTemplate(cardsWrapperElement, createTaskEditTemplate());
 for (let i = 0; i < MAX_CARDS_QUANTITY; i++) {
-  renderTemplate(cardsWrapperElement, createCardTemplate());
+  renderTemplate(cardsWrapperElement, createTaskTemplate(tasks[i]));
 }
 
